@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Threading Details - Freedas Limited</title>
+  <title>Henna Painting Details - Freedas Limited</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,14 +36,13 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="../index.html#hero">Freedas Ladies Beauty Salon</a></h1>
+      <h1 class="logo"><a href="../index.html#hero">Freedas Salon</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="../index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto active" href="../index.html#branches">Branches</a></li>
           <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices</span> <i class="bi bi-chevron-down"></i></a>
-            <!-- Original -->
             <ul>
               <li><a href="threading.html">Threading</a></li>
               <li><a href="waxing.html">Waxing</a></li>
@@ -107,10 +106,10 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Threading Information</h2>
+          <h2>Henna Painting Information</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li>Threading</li>
+            <li>Henna Painting</li>
           </ol>
         </div>
       </div>
@@ -124,13 +123,13 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/threading-1.jpg" alt="">
+                  <img src="../assets/images/henna_painting-1.jpeg" alt="Henna Painting Example 1">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/threading-2.jpeg" alt="">
+                  <img src="../assets/images/henna_painting-2.jpg" alt="Henna Painting Example 2">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/threading-3.jpg" alt="">
+                  <img src="../assets/images/henna_painting-3.jpg" alt="Henna Painting Example 3">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -140,19 +139,14 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
-                <li><strong>Duration</strong>: Approximately 15-30 minutes</li>
-                <li><strong>Price Range</strong>: HK $10 - HK $160</li>
-                <li><strong>Technician</strong>: Certified Threading Specialist</li>
-                <li><strong>Contact</strong>: <a href="mailto:info@freedas.com">info@freedas.com</a></li>
+                <li><strong>Service</strong>: Henna Painting</li>
+                <li><strong>Types</strong>: Arabic One Painting, Indian Traditional Full Palm, Tattoos, Bridal Arms Only, Bridal Feet Only</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Background History</h2>
               <p>
-                Threading is a unique art of hair removal, which originated in the Middle
-                East/Asian countries centuries ago. Besides being a very quick and a precise
-                technique it is very hygienic... It involves shaping and removal of unwanted
-                hair with a cotton string.
+                Henna has been used for hundreds of years as a natural plant dye. When applied to the skin, it produces a temporary stain similar to a tattoo but not permanent. Henna is completely natural, safe, and painless. It can be painted almost anywhere on the body, traditionally placed on the hands, feet, ankle, shins, and wrists where the skin is thickest to achieve a good dark stain. The henna paste hardens as it dries, and a mixture of lemon juice and sugar is applied to help darken the stain and keep the paste on for longer.
               </p>
             </div>
           </div>
@@ -160,62 +154,52 @@
       </div>
     </section><!-- End Portfolio Details Section -->
 
+    <!-- ======= Branch Selection Tabs ======= -->
+    <section class="branch-tabs section-bg py-4">
+      <div class="container">
+        <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('main')"><strong>Main Branch</strong></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('db')"><strong>DB Branch</strong></button>
+          </li>
+        </ul>
+      </div>
+    </section><!-- End Branch Selection Tabs -->
+
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container">
         <div class="row gy-4 gx-lg-5">
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Eye Brow Shaping</h3>
-              <h4>HK $30</h4>
+              <h3>Arabic One Painting</h3>
+              <h4 class="price" data-service="Arabic One Painting">HK $80.00</h4>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Upper Lip</h3>
-              <h4>HK $20</h4>
+              <h3>Indian Traditional Full Palm</h3>
+              <h4 class="price" data-service="Indian Traditional Full Palm">HK $150.00</h4>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Lower Lip Threading</h3>
-              <h4>HK $10</h4>
+              <h3>Single Tattoos</h3>
+              <h4 class="price" data-service="Single Tattoos">HK $40.00</h4>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Chin</h3>
-              <h4>HK $10</h4>
+              <h3>Bridal Arms Only</h3>
+              <h4 class="price" data-service="Bridal Arms Only">HK $2000.00</h4>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Sides</h3>
-              <h4>HK $50</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Forehead</h3>
-              <h4>HK $20</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Chin with Neck</h3>
-              <h4>HK $50</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Full Face (without Neck)</h3>
-              <h4>HK $130</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Everything</h3>
-              <h4>HK $160</h4>
+              <h3>Bridal Feet Only</h3>
+              <h4 class="price" data-service="Bridal Feet Only">HK $1500.00</h4>
             </div>
           </div><!-- End Pricing Item -->
         </div>
@@ -233,8 +217,7 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -246,6 +229,39 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <!-- Custom JS for Branch-Specific Pricing -->
+  <script>
+    const prices = {
+      'main': {
+        'Arabic One Painting': 'HK $80.00',
+        'Indian Traditional Full Palm': 'HK $150.00',
+        'Single Tattoos': 'HK $40.00',
+        'Bridal Arms Only': 'HK $2000.00',
+        'Bridal Feet Only': 'HK $1500.00'
+      },
+      'db': {
+        'Arabic One Painting': 'HK $90.00',
+        'Indian Traditional Full Palm': 'HK $160.00',
+        'Single Tattoos': 'HK $45.00',
+        'Bridal Arms Only': 'HK $2100.00',
+        'Bridal Feet Only': 'HK $1600.00'
+      }
+    };
+
+    function updatePrices(branch) {
+      document.querySelectorAll('.price').forEach(priceElement => {
+        const serviceName = priceElement.dataset.service;
+        if (prices[branch][serviceName]) {
+          priceElement.textContent = prices[branch][serviceName];
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePrices('main'); // Set default to main branch
+    });
+  </script>
 
 </body>
 

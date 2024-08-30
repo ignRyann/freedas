@@ -35,14 +35,13 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="../index.html#hero">Freedas Ladies Beauty Salon</a></h1>
+      <h1 class="logo"><a href="../index.html#hero">Freedas Salon</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="../index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="../index.html#branches">Branches</a></li>
           <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices</span> <i class="bi bi-chevron-down"></i></a>
-            <!-- Original -->
             <ul>
               <li><a href="../other_branches/threading.html">Threading</a></li>
               <li><a href="../other_branches/waxing.html">Waxing</a></li>
@@ -154,80 +153,94 @@
       </div>
     </section><!-- End Portfolio Details Section -->
 
+    <!-- ======= Branch Selection Tabs ======= -->
+    <section class="branch-tabs section-bg py-4">
+      <div class="container">
+        <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('main')"><strong>Main Branch</strong></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('db')"><strong>DB Branch</strong></button>
+          </li>
+        </ul>
+      </div>
+    </section><!-- End Branch Selection Tabs -->
+
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container">
         <div class="row gy-4 gx-lg-5">
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Fruit Cleansing (Refreshing)</h3>
-              <h4>HK $250.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Fruit Cleansing (Refreshing)</h3>
+              <span class="service-price">HK $250.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Herbal Facial (Normal Skin)</h3>
-              <h4>HK $280.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Herbal Facial (Normal Skin)</h3>
+              <span class="service-price">HK $280.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Fruit Facial (For Oily Skin)</h3>
-              <h4>HK $300.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Fruit Facial (For Oily Skin)</h3>
+              <span class="service-price">HK $300.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Oxygen Facial (pH Balancing & Rejuvenate Skin)</h3>
-              <h4>HK $380.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Oxygen Facial (pH Balancing & Rejuvenate Skin)</h3>
+              <span class="service-price">HK $380.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Whitening Facial (For Glowing Skin)</h3>
-              <h4>HK $380.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Whitening Facial (For Glowing Skin)</h3>
+              <span class="service-price">HK $380.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Skin Polishing Facial (Pore Purging and Skin Glow)</h3>
-              <h4>HK $380.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Skin Polishing Facial (Pore Purging and Skin Glow)</h3>
+              <span class="service-price">HK $380.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Casmara 24K Gold Facial (Rejuvenating and Anti Aging)</h3>
-              <h4>HK $480.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Casmara 24K Gold Facial (Rejuvenating and Anti Aging)</h3>
+              <span class="service-price">HK $480.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Casmara Facial (Hydrating & Rejuvenating)</h3>
-              <h4>HK $400.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Casmara Facial (Hydrating & Rejuvenating)</h3>
+              <span class="service-price">HK $400.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Stem Cell Apple Facial (Lift & Tightening)</h3>
-              <h4>HK $380.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Stem Cell Apple Facial (Lift & Tightening)</h3>
+              <span class="service-price">HK $380.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Caviar Smoothing Facial</h3>
-              <h4>HK $380.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Caviar Smoothing Facial</h3>
+              <span class="service-price">HK $380.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Collagen Facial</h3>
-              <h4>HK $380.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Collagen Facial</h3>
+              <span class="service-price">HK $380.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Sundari Age-Defying Firming Facial</h3>
-              <h4>HK $580.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Sundari Age-Defying Firming Facial</h3>
+              <span class="service-price">HK $580.00</span>
             </div>
           </div><!-- End Pricing Item -->
         </div>
@@ -257,6 +270,61 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <!-- Custom JS for Branch Pricing -->
+  <script>
+    const pricingData = {
+      "main": {
+        "Fruit Cleansing (Refreshing)": "HK $250.00",
+        "Herbal Facial (Normal Skin)": "HK $280.00",
+        "Fruit Facial (For Oily Skin)": "HK $300.00",
+        "Oxygen Facial (pH Balancing & Rejuvenate Skin)": "HK $380.00",
+        "Whitening Facial (For Glowing Skin)": "HK $380.00",
+        "Skin Polishing Facial (Pore Purging and Skin Glow)": "HK $380.00",
+        "Casmara 24K Gold Facial (Rejuvenating and Anti Aging)": "HK $480.00",
+        "Casmara Facial (Hydrating & Rejuvenating)": "HK $400.00",
+        "Stem Cell Apple Facial (Lift & Tightening)": "HK $380.00",
+        "Caviar Smoothing Facial": "HK $380.00",
+        "Collagen Facial": "HK $380.00",
+        "Sundari Age-Defying Firming Facial": "HK $580.00"
+      },
+      "db": {
+        "Fruit Cleansing (Refreshing)": "HK $260.00",
+        "Herbal Facial (Normal Skin)": "HK $290.00",
+        "Fruit Facial (For Oily Skin)": "HK $310.00",
+        "Oxygen Facial (pH Balancing & Rejuvenate Skin)": "HK $390.00",
+        "Whitening Facial (For Glowing Skin)": "HK $390.00",
+        "Skin Polishing Facial (Pore Purging and Skin Glow)": "HK $390.00",
+        "Casmara 24K Gold Facial (Rejuvenating and Anti Aging)": "HK $490.00",
+        "Casmara Facial (Hydrating & Rejuvenating)": "HK $410.00",
+        "Stem Cell Apple Facial (Lift & Tightening)": "HK $390.00",
+        "Caviar Smoothing Facial": "HK $390.00",
+        "Collagen Facial": "HK $390.00",
+        "Sundari Age-Defying Firming Facial": "HK $590.00"
+      }
+    };
+
+    function updatePrices(branch) {
+      const prices = pricingData[branch];
+      const pricingItems = document.querySelectorAll('.pricing-item');
+
+      pricingItems.forEach(item => {
+        const serviceName = item.querySelector('.service-name').textContent.trim();
+        const priceElement = item.querySelector('.service-price');
+
+        if (prices[serviceName]) {
+          priceElement.textContent = prices[serviceName];
+        } else {
+          priceElement.textContent = "N/A";
+        }
+      });
+    }
+
+    // Initialize default prices on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePrices('main');
+    });
+  </script>
 
 </body>
 

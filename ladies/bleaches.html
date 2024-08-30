@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Threading Details - Freedas Limited</title>
+  <title>Bleaches Details - Freedas Limited</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,15 +28,13 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="../index.html#hero">Freedas Ladies Beauty Salon</a></h1>
+      <h1 class="logo"><a href="../index.html#hero">Freedas Salon</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -107,10 +105,10 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Threading Information</h2>
+          <h2>Bleaches Information</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li>Threading</li>
+            <li>Bleaches</li>
           </ol>
         </div>
       </div>
@@ -124,13 +122,13 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/threading-1.jpg" alt="">
+                  <img src="../assets/images/bleaches-1.jpg" alt="Bleach Service Example 1">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/threading-2.jpeg" alt="">
+                  <img src="../assets/images/bleaches-2.jpg" alt="Bleach Service Example 2">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/threading-3.jpg" alt="">
+                  <img src="../assets/images/bleaches-3.jpg" alt="Bleach Service Example 3">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -140,19 +138,14 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
-                <li><strong>Duration</strong>: Approximately 15-30 minutes</li>
-                <li><strong>Price Range</strong>: HK $10 - HK $160</li>
-                <li><strong>Technician</strong>: Certified Threading Specialist</li>
-                <li><strong>Contact</strong>: <a href="mailto:info@freedas.com">info@freedas.com</a></li>
+                <li><strong>Service</strong>: Bleaches</li>
+                <li><strong>Types</strong>: Face Bleach, Upper Lip Bleach, Arms Bleach, Legs Bleach, Full Body Bleach, etc.</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Background History</h2>
               <p>
-                Threading is a unique art of hair removal, which originated in the Middle
-                East/Asian countries centuries ago. Besides being a very quick and a precise
-                technique it is very hygienic... It involves shaping and removal of unwanted
-                hair with a cotton string.
+                Bleaching skin can be an effective remedy for many who are fed up with their skin complexion and crave glowing skin. Using a bleaching face cream can help those who want to get rid of age spots and skin pigmentation while boosting self-confidence. Bleaching contains chemicals that merge into the skin and lighten facial hair, making it considerably less noticeable without actually removing it.
               </p>
             </div>
           </div>
@@ -160,62 +153,118 @@
       </div>
     </section><!-- End Portfolio Details Section -->
 
+    <!-- ======= Branch Selection Tabs ======= -->
+    <section class="branch-tabs section-bg py-4">
+      <div class="container">
+        <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('other')"><strong>Other Branches</strong></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('db')"><strong>DB Branch</strong></button>
+          </li>
+        </ul>
+      </div>
+    </section><!-- End Branch Selection Tabs -->
+
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container">
         <div class="row gy-4 gx-lg-5">
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Eye Brow Shaping</h3>
-              <h4>HK $30</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Face Bleach (Fruits/Wella/Oxy)</h3>
+              <span class="service-price">HK $80.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Upper Lip</h3>
-              <h4>HK $20</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Face Fruit Bleach with Fruit Pack</h3>
+              <span class="service-price">HK $120.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Lower Lip Threading</h3>
-              <h4>HK $10</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Upper Lip Bleach</h3>
+              <span class="service-price">HK $30.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Chin</h3>
-              <h4>HK $10</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Arms Bleach</h3>
+              <span class="service-price">HK $140.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Sides</h3>
-              <h4>HK $50</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Legs Bleach</h3>
+              <span class="service-price">HK $180.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Forehead</h3>
-              <h4>HK $20</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Front Bleach</h3>
+              <span class="service-price">HK $120.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Chin with Neck</h3>
-              <h4>HK $50</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Back Bleach</h3>
+              <span class="service-price">HK $120.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Full Face (without Neck)</h3>
-              <h4>HK $130</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Half Back Bleach</h3>
+              <span class="service-price">HK $80.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Everything</h3>
-              <h4>HK $160</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Under Arms Bleach</h3>
+              <span class="service-price">HK $70.00</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Full Body Scrub</h3>
+              <span class="service-price">HK $380.00</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Full Body Bleach</h3>
+              <span class="service-price">HK $580.00</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Half Back Scrub with Pack</h4>
+              <span class="service-price">HK $100.00</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Half Back Scrub without Pack</h3>
+              <span class="service-price">HK $70.00</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Full Back Scrub with Pack</h3>
+              <span class="service-price">HK $160.00</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Full Back Scrub without Pack</h3>
+              <span class="service-price">HK $120.00</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Feet Bleach</h3>
+              <span class="service-price">HK $80.00</span>
             </div>
           </div><!-- End Pricing Item -->
         </div>
@@ -233,8 +282,7 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -246,6 +294,69 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <!-- Custom JS for Branch Pricing -->
+  <script>
+    const pricingData = {
+      "other": {
+        "Face Bleach (Fruits/Wella/Oxy)": "HK $80.00",
+        "Face Fruit Bleach with Fruit Pack": "HK $120.00",
+        "Upper Lip Bleach": "HK $30.00",
+        "Arms Bleach": "HK $140.00",
+        "Legs Bleach": "HK $180.00",
+        "Front Bleach": "HK $120.00",
+        "Back Bleach": "HK $120.00",
+        "Half Back Bleach": "HK $80.00",
+        "Under Arms Bleach": "HK $70.00",
+        "Full Body Scrub": "HK $380.00",
+        "Full Body Bleach": "HK $580.00",
+        "Half Back Scrub with Pack": "HK $100.00",
+        "Half Back Scrub without Pack": "HK $70.00",
+        "Full Back Scrub with Pack": "HK $160.00",
+        "Full Back Scrub without Pack": "HK $120.00",
+        "Feet Bleach": "HK $80.00"
+      },
+      "db": {
+        "Face Bleach (Fruits/Wella/Oxy)": "HK $80.00",
+        "Face Fruit Bleach with Fruit Pack": "HK $120.00",
+        "Upper Lip Bleach": "HK $30.00",
+        "Arms Bleach": "HK $140.00",
+        "Legs Bleach": "HK $180.00",
+        "Front Bleach": "HK $120.00",
+        "Back Bleach": "HK $120.00",
+        "Half Back Bleach": "HK $80.00",
+        "Under Arms Bleach": "HK $70.00",
+        "Full Body Scrub": "HK $380.00",
+        "Full Body Bleach": "HK $580.00",
+        "Half Back Scrub with Pack": "HK $100.00",
+        "Half Back Scrub without Pack": "HK $70.00",
+        "Full Back Scrub with Pack": "HK $160.00",
+        "Full Back Scrub without Pack": "HK $120.00",
+        "Feet Bleach": "HK $80.00"
+      }
+    };
+
+    function updatePrices(branch) {
+      const prices = pricingData[branch];
+      const pricingItems = document.querySelectorAll('.pricing-item');
+
+      pricingItems.forEach(item => {
+        const serviceName = item.querySelector('.service-name').textContent.trim();
+        const priceElement = item.querySelector('.service-price');
+
+        if (prices[serviceName]) {
+          priceElement.textContent = prices[serviceName];
+        } else {
+          priceElement.textContent = "N/A";
+        }
+      });
+    }
+
+    // Initialize default prices on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePrices('main');
+    });
+  </script>
 
 </body>
 

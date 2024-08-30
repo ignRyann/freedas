@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Half-Day Pampering Details - Freedas Limited</title>
+  <title>Massage Details - Freedas Limited</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,14 +36,13 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="../index.html#hero">Freedas Ladies Beauty Salon</a></h1>
+      <h1 class="logo"><a href="../index.html#hero">Freedas Salon</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="../index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto active" href="../index.html#branches">Branches</a></li>
           <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices</span> <i class="bi bi-chevron-down"></i></a>
-            <!-- Original -->
             <ul>
               <li><a href="threading.html">Threading</a></li>
               <li><a href="waxing.html">Waxing</a></li>
@@ -107,10 +106,10 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Half-Day Pampering Information</h2>
+          <h2>Massage Information</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li>Half-Day Pampering</li>
+            <li>Massage</li>
           </ol>
         </div>
       </div>
@@ -124,13 +123,13 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/facials-1.jpg" alt="Half-Day Pampering Example 1">
+                  <img src="../assets/images/massage-1.jpg" alt="Massage Service Example 1">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/massage-1.jpg" alt="Half-Day Pampering Example 2">
+                  <img src="../assets/images/massage-2.jpg" alt="Massage Service Example 2">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/eye_treatment-1.jpg" alt="Half-Day Pampering Example 3">
+                  <img src="../assets/images/massage-3.jpg" alt="Massage Service Example 3">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -140,14 +139,14 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
-                <li><strong>Service</strong>: Half-Day Pampering</li>
-                <li><strong>Packages</strong>: Facial + Head Massage + Manicure + Pedicure + Eyebrows Shaping, Facial + Body Massage + Body Scrub (2 Hours)</li>
+                <li><strong>Service</strong>: Massages</li>
+                <li><strong>Types</strong>: Deep Tissue Massage, Lymphatic Body Massage, Aromatherapy Massage, Foot Massage, Arm/Shoulder Massage, Head Massage</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Background History</h2>
               <p>
-                Our Half-Day Pampering packages are designed to provide a comprehensive and relaxing experience, combining various treatments to rejuvenate and refresh your body and mind. The treatments include facial, head massage, manicure, pedicure, eyebrows shaping, body massage, and body scrub, ensuring you feel pampered and revitalized.
+                Massage therapy is a powerful ally in your healthcare regimen, providing stress relief, pain management, and overall relaxation. It helps manage stress, resulting in decreased anxiety, enhanced sleep quality, greater energy, improved concentration, increased circulation, and reduced fatigue. Our massage services include Deep Tissue Massage to relieve pain and muscle tension, Lymphatic Body Massage to increase lymph flow and reduce toxins, Aromatherapy Massage to relax and heal using essential oils, and various targeted massages for the foot, arm, shoulder, and head.
               </p>
             </div>
           </div>
@@ -155,20 +154,58 @@
       </div>
     </section><!-- End Portfolio Details Section -->
 
+    <!-- ======= Branch Selection Tabs ======= -->
+    <section class="branch-tabs section-bg py-4">
+      <div class="container">
+        <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('main')"><strong>Main Branch</strong></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('db')"><strong>DB Branch</strong></button>
+          </li>
+        </ul>
+      </div>
+    </section><!-- End Branch Selection Tabs -->
+
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container">
         <div class="row gy-4 gx-lg-5">
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Facial, Head Massage, Manicure, Pedicure and Eyebrows Shaping</h3>
-              <h4>HK $690.00</h4>
+              <h3>Deep Tissue Massage</h3>
+              <h4 class="price" data-service="Deep Tissue Massage">HK $300.00</h4>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3>Facial, Body Massage, and Body Scrub - Two Hours</h3>
-              <h4>HK $600.00</h4>
+              <h3>Lymphatic Body Massage</h3>
+              <h4 class="price" data-service="Lymphatic Body Massage">HK $280.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Aromatherapy Massage</h3>
+              <h4 class="price" data-service="Aromatherapy Massage">HK $320.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Foot Massage (20 mins)</h3>
+              <h4 class="price" data-service="Foot Massage (20 mins)">HK $90.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Arm or Shoulder Massage (20 mins)</h3>
+              <h4 class="price" data-service="Arm or Shoulder Massage (20 mins)">HK $90.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Head Massage (20 mins)</h3>
+              <h4 class="price" data-service="Head Massage (20 mins)">HK $90.00</h4>
             </div>
           </div><!-- End Pricing Item -->
         </div>
@@ -198,6 +235,41 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <!-- Custom JS for Branch-Specific Pricing -->
+  <script>
+    const prices = {
+      'main': {
+        'Deep Tissue Massage': 'HK $300.00',
+        'Lymphatic Body Massage': 'HK $280.00',
+        'Aromatherapy Massage': 'HK $320.00',
+        'Foot Massage (20 mins)': 'HK $90.00',
+        'Arm or Shoulder Massage (20 mins)': 'HK $90.00',
+        'Head Massage (20 mins)': 'HK $90.00'
+      },
+      'db': {
+        'Deep Tissue Massage': 'HK $330.00',
+        'Lymphatic Body Massage': 'HK $300.00',
+        'Aromatherapy Massage': 'HK $350.00',
+        'Foot Massage (20 mins)': 'HK $100.00',
+        'Arm or Shoulder Massage (20 mins)': 'HK $100.00',
+        'Head Massage (20 mins)': 'HK $100.00'
+      }
+    };
+
+    function updatePrices(branch) {
+      document.querySelectorAll('.price').forEach(priceElement => {
+        const serviceName = priceElement.dataset.service;
+        if (prices[branch][serviceName]) {
+          priceElement.textContent = prices[branch][serviceName];
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePrices('main'); // Set default to main branch
+    });
+  </script>
 
 </body>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Oil Treatment Details - Freedas Limited</title>
+  <title>Threading Details - Freedas Limited</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,14 +36,13 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="../index.html#hero">Freedas Ladies Beauty Salon</a></h1>
+      <h1 class="logo"><a href="../index.html#hero">Freedas Salon</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="../index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="../index.html#branches">Branches</a></li>
           <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices</span> <i class="bi bi-chevron-down"></i></a>
-            <!-- Original -->
             <ul>
               <li><a href="../other_branches/threading.html">Threading</a></li>
               <li><a href="../other_branches/waxing.html">Waxing</a></li>
@@ -102,15 +101,14 @@
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Oil Treatments Information</h2>
+          <h2>Threading Information</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li>Oil Treatments</li>
+            <li>Threading</li>
           </ol>
         </div>
       </div>
@@ -124,13 +122,13 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/oil_treatment-2.jpg" alt="Oil Treatment Example 2">
+                  <img src="../assets/images/threading-1.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/oil_treatment-3.jpg" alt="Oil Treatment Example 2">
+                  <img src="../assets/images/threading-2.jpeg" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/oil_treatment-1.jpeg" alt="Oil Treatment Example 1">
+                  <img src="../assets/images/threading-3.jpg" alt="">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -140,14 +138,19 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
-                <li><strong>Service</strong>: Oil Treatments</li>
-                <li><strong>Types</strong>: Oil Massage with Steam, Hair Spa, Indian Herbal Oil Treatment, Dandruff & Falling Hair Treatment</li>
+                <li><strong>Duration</strong>: Approximately 15-30 minutes</li>
+                <li><strong>Price Range</strong>: HK $10 - HK $160</li>
+                <li><strong>Technician</strong>: Certified Threading Specialist</li>
+                <li><strong>Contact</strong>: <a href="mailto:info@freedas.com">info@freedas.com</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Background History</h2>
               <p>
-                Our oil treatments include a variety of services aimed at reducing stress and rejuvenating hair and scalp health. Oil Massage with Steam helps reduce stress and tension in the head and neck region using therapeutic oils and steam. Hair Spa treatments are ideal for rejuvenating hair, moisturizing it, and preventing dandruff. Indian Herbal Oil Treatment, made from natural herbs, effectively reduces hair loss by improving blood circulation to the scalp. The Dandruff & Falling Hair treatment nourishes the hair roots, cures the root cause of hair fall, and includes high-frequency machine treatment and a hair pack massage.
+                Threading is a unique art of hair removal, which originated in the Middle
+                East/Asian countries centuries ago. Besides being a very quick and a precise
+                technique it is very hygienic... It involves shaping and removal of unwanted
+                hair with a cotton string.
               </p>
             </div>
           </div>
@@ -155,32 +158,76 @@
       </div>
     </section><!-- End Portfolio Details Section -->
 
+    <!-- ======= Branch Selection Tabs ======= -->
+    <section class="branch-tabs section-bg py-4">
+      <div class="container">
+        <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('other')"><strong>Other Branches</strong></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('db')"><strong>DB Branch</strong></button>
+          </li>
+        </ul>
+      </div>
+    </section><!-- End Branch Selection Tabs -->
+
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container">
         <div class="row gy-4 gx-lg-5">
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Oil Massage with Steam</h3>
-              <h4>HK $150.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Eye Brow Shaping</h3>
+              <span class="service-price">HK $30</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Hair Spa</h3>
-              <h4>HK $240.00 and up</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Upper Lip</h3>
+              <span class="service-price">HK $20</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Indian Herbal Oil Treatment</h3>
-              <h4>HK $200.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Lower Lip Threading</h3>
+              <span class="service-price">HK $10</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Dandruff & Falling Hair Treatment</h3>
-              <h4>HK $250.00</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Chin</h3>
+              <span class="service-price">HK $10</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Sides</h3>
+              <span class="service-price">HK $50</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Forehead</h3>
+              <span class="service-price">HK $20</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Chin with Neck</h3>
+              <span class="service-price">HK $50</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Full Face (without Neck)</h3>
+              <span class="service-price">HK $130</span>
+            </div>
+          </div><!-- End Pricing Item -->
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Everything</h3>
+              <span class="service-price">HK $160</span>
             </div>
           </div><!-- End Pricing Item -->
         </div>
@@ -198,7 +245,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -210,6 +258,55 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <!-- Custom JS for Branch Pricing -->
+  <script>
+    const pricingData = {
+      "other": {
+        "Eye Brow Shaping": "HK $30",
+        "Upper Lip": "HK $20",
+        "Lower Lip Threading": "HK $10",
+        "Chin": "HK $10",
+        "Sides": "HK $50",
+        "Forehead": "HK $20",
+        "Chin with Neck": "HK $50",
+        "Full Face (without Neck)": "HK $130",
+        "Everything": "HK $160"
+      },
+      "db": {
+        "Eye Brow Shaping": "HK $30",
+        "Upper Lip": "HK $20",
+        "Lower Lip Threading": "HK $10",
+        "Chin": "HK $10",
+        "Sides": "HK $50",
+        "Forehead": "HK $20",
+        "Chin with Neck": "HK $50",
+        "Full Face (without Neck)": "HK $130",
+        "Everything": "HK $160"
+      }
+    };
+
+    function updatePrices(branch) {
+      const prices = pricingData[branch];
+      const pricingItems = document.querySelectorAll('.pricing-item');
+
+      pricingItems.forEach(item => {
+        const serviceName = item.querySelector('.service-name').textContent.trim();
+        const priceElement = item.querySelector('.service-price');
+
+        if (prices[serviceName]) {
+          priceElement.textContent = prices[serviceName];
+        } else {
+          priceElement.textContent = "N/A";
+        }
+      });
+    }
+
+    // Initialize default prices on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePrices('main');
+    });
+  </script>
 
 </body>
 

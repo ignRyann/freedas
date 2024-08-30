@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Hair Styling Details - Freedas Limited</title>
+  <title>Eye Treatment Details - Freedas Limited</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,14 +36,13 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="../index.html#hero">Freedas Ladies Beauty Salon</a></h1>
+      <h1 class="logo"><a href="../index.html#hero">Freedas Salon</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="../index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="../index.html#branches">Branches</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html#branches">Branches</a></li>
           <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices</span> <i class="bi bi-chevron-down"></i></a>
-            <!-- Original -->
             <ul>
               <li><a href="../other_branches/threading.html">Threading</a></li>
               <li><a href="../other_branches/waxing.html">Waxing</a></li>
@@ -69,7 +68,7 @@
             </ul>
           </li>
 
-          <li class="dropdown active"><a href="../index.html#hero"><span>Services & Prices (DB Branch)</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices (DB Branch)</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="threading.html">Threading</a></li>
               <li><a href="waxing.html">Waxing</a></li>
@@ -107,10 +106,10 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Hair Styling Information</h2>
+          <h2>Eye Treatment Information</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li>Hair Styling</li>
+            <li>Eye Treatments</li>
           </ol>
         </div>
       </div>
@@ -124,13 +123,13 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/hair-1.jpg" alt="Hair Styling Example 1">
+                  <img src="../assets/images/eye_treatment-1.jpg" alt="Eye Treatment Example 1">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/hair-2.jpg" alt="Hair Styling Example 2">
+                  <img src="../assets/images/eye-treatment-2.jpeg" alt="Eye Treatment Example 2">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/hair-3.jpg" alt="Hair Styling Example 3">
+                  <img src="../assets/images/eye-treatment-3.jpg" alt="Eye Treatment Example 2">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -140,14 +139,14 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
-                <li><strong>Service</strong>: Hair Styling</li>
-                <li><strong>Types</strong>: Henna Application, Herbal Hair Colour, Hair Colouring, Hair Cut, Shampoo & Blow Dry, Hair Styling</li>
+                <li><strong>Service</strong>: Eye Treatments</li>
+                <li><strong>Types</strong>: Eyelash Tinting, Eyebrows Tinting, Eyelash Perming</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Background History</h2>
               <p>
-                Our hair styling services use traditional Indian herbs from henna plants to color and condition your hair. Herbal henna provides a reddish-brown color, blending grey hair with natural dark hair and giving it a highlighted effect. It also acts as a conditioner, adding extra shine and luster. Herbal hair color contains natural henna and herbs, with minimal chemicals, to provide a natural look. Hair coloring can significantly enhance your appearance and spirit with various options available. We offer various haircuts to suit your personality, along with shampoo and blow-dry services to complete your look.
+                Eyelash and Eyebrow tinting involves carefully dying the lashes with safe, high-quality tints, to give them a natural, luscious, darker appearance. Various eyelash and eyebrow tint colors (including blues, browns, blacks, and greys) are available to complement your skin and hair coloring perfectly. Eyelash tinting, using "Strictly professional" from the UK, creates definition and the appearance of longer, thicker lashes for a natural look. Eyebrows Tinting, using Sexy Brow Henna, provides a natural dye with a tattoo effect for up to 2 months, creating a beautiful "powder eyebrows" effect. The process is hygienic with 97% natural components.
               </p>
             </div>
           </div>
@@ -155,62 +154,40 @@
       </div>
     </section><!-- End Portfolio Details Section -->
 
+    <!-- ======= Branch Selection Tabs ======= -->
+    <section class="branch-tabs section-bg py-4">
+      <div class="container">
+        <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('main')"><strong>Main Branch</strong></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('db')"><strong>DB Branch</strong></button>
+          </li>
+        </ul>
+      </div>
+    </section><!-- End Branch Selection Tabs -->
+
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container">
         <div class="row gy-4 gx-lg-5">
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Henna Application on Hair</h3>
-              <h4>HK $200.00+</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Eyelash Tinting</h3>
+              <span class="service-price">HK $140.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Herbal Hair Colour</h3>
-              <h4>HK $300.00+</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Eyebrows Tinting</h3>
+              <span class="service-price">HK $120.00</span>
             </div>
           </div><!-- End Pricing Item -->
           <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Hair Colouring with Customer's Own Colour</h3>
-              <h4>HK $200.00+</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Hair Cut</h3>
-              <h4>HK $180.00+</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Shampoo and Blow Dry</h3>
-              <h4>HK $100.00+</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Hair Styling</h3>
-              <h4>HK $350.00+</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Loreal/Inoa Hair Colour</h3>
-              <h4>HK $300.00+</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Hair Cut with Wash</h4>
-              <h4>HK $200.00+</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Nalo Hair Colour</h3>
-              <h4>HK $250.00+</h4>
+            <div class="pricing-item d-flex justify-content-between align-items-center">
+              <h3 class="service-name">Eyelash Perming</h3>
+              <span class="service-price">HK $180.00</span>
             </div>
           </div><!-- End Pricing Item -->
         </div>
@@ -240,6 +217,43 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <!-- Custom JS for Branch Pricing -->
+  <script>
+    const pricingData = {
+      "main": {
+        "Eyelash Tinting": "HK $140.00",
+        "Eyebrows Tinting": "HK $120.00",
+        "Eyelash Perming": "HK $180.00"
+      },
+      "db": {
+        "Eyelash Tinting": "HK $150.00",
+        "Eyebrows Tinting": "HK $130.00",
+        "Eyelash Perming": "HK $190.00"
+      }
+    };
+
+    function updatePrices(branch) {
+      const prices = pricingData[branch];
+      const pricingItems = document.querySelectorAll('.pricing-item');
+
+      pricingItems.forEach(item => {
+        const serviceName = item.querySelector('.service-name').textContent.trim();
+        const priceElement = item.querySelector('.service-price');
+
+        if (prices[serviceName]) {
+          priceElement.textContent = prices[serviceName];
+        } else {
+          priceElement.textContent = "N/A";
+        }
+      });
+    }
+
+    // Initialize default prices on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePrices('main');
+    });
+  </script>
 
 </body>
 
