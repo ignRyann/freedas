@@ -36,13 +36,17 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="../index.html#hero">Freedas Salon</a></h1>
+      <h1 class="logo"><a href="../index.html">Freedas Salon</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="../index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
           <li><a class="nav-link scrollto active" href="../index.html#branches">Branches</a></li>
-          <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices</span> <i class="bi bi-chevron-down"></i></a>
+
+          <!-- --------------------------- -->
+          <!-- LADIES TREATMENTS & PRICING -->
+          <!-- --------------------------- -->
+          <li class="dropdown"><a href="../index.html#hero"><span>Ladies</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="threading.html">Threading</a></li>
               <li><a href="waxing.html">Waxing</a></li>
@@ -52,45 +56,20 @@
               <li><a href="oil_treatments.html">Oil Treatments</a></li>
               <li><a href="massage.html">Massage</a></li>
               <li><a href="eye_treatments.html">Eye Treatments</a></li>
-              <li class="dropdown"><a href="#"><span>Hair</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Henna Application on Hair</a></li>
-                  <li><a href="#">Herbal Hair Color</a></li>
-                  <li><a href="#">Hair Colouring</a></li>
-                  <li><a href="#">Hair Cut</a></li>
-                  <li><a href="#">Shampoo & Blow Dry</a></li>
-                  <li><a href="hair_styling.html">Hair Styling</a></li>
-                </ul>
-              </li>
+              <li><a href="hair_styling.html"><span>Hair Styling</span></a></li>
+              <li><a href="hair_treatments.html"><span>Hair Treatments</span></a></li>
               <li><a href="henna_painting.html">Henna Painting</a></li>
               <li><a href="make_up.html">Make Up</a></li>
               <li><a href="half_day_pampering.html">Half-Day Pampering</a></li>
             </ul>
           </li>
 
-          <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices (DB Branch)</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- ------------------------- -->
+          <!-- MENS TREATMENTS & PRICING -->
+          <!-- ------------------------- -->
+          <li class="dropdown"><a href="../index.html#hero"><span>Mens</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../DB_branch/threading.html">Threading</a></li>
-              <li><a href="../DB_branch/waxing.html">Waxing</a></li>
-              <li><a href="../DB_branch/facials.html">Facials</a></li>
-              <li><a href="../DB_branch/bleaches.html">Bleaches</a></li>
-              <li><a href="../DB_branch/hand_feet_treatment.html">Hands & Feet Treatments</a></li>
-              <li><a href="../DB_branch/oil_treatments.html">Oil Treatments</a></li>
-              <li><a href="../DB_branch/massage.html">Massage</a></li>
-              <li><a href="../DB_branch/eye_treatments.html">Eye Treatments</a></li>
-              <li class="dropdown"><a href="#"><span>Hair</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Henna Application on Hair</a></li>
-                  <li><a href="#">Herbal Hair Color</a></li>
-                  <li><a href="#">Hair Colouring</a></li>
-                  <li><a href="#">Hair Cut</a></li>
-                  <li><a href="#">Shampoo & Blow Dry</a></li>
-                  <li><a href="../DB_branch/hair_styling.html">Hair Styling</a></li>
-                </ul>
-              </li>
-              <li><a href="../DB_branch/henna_painting.html">Henna Painting</a></li>
-              <li><a href="../DB_branch/make_up.html">Make Up</a></li>
-              <li><a href="../DB_branch/half_day_pampering.html">Half-Day Pampering</a></li>
+              <li><a href="other_branches/threading.html">Threading</a></li>
             </ul>
           </li>
         </ul>
@@ -143,12 +122,6 @@
                 <li><strong>Types</strong>: Arabic One Painting, Indian Traditional Full Palm, Tattoos, Bridal Arms Only, Bridal Feet Only</li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>Background History</h2>
-              <p>
-                Henna has been used for hundreds of years as a natural plant dye. When applied to the skin, it produces a temporary stain similar to a tattoo but not permanent. Henna is completely natural, safe, and painless. It can be painted almost anywhere on the body, traditionally placed on the hands, feet, ankle, shins, and wrists where the skin is thickest to achieve a good dark stain. The henna paste hardens as it dries, and a mixture of lemon juice and sugar is applied to help darken the stain and keep the paste on for longer.
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -159,52 +132,36 @@
       <div class="container">
         <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('main')"><strong>Main Branch</strong></button>
+            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab"
+              onclick="showBranch('other')"><strong>All Other Branches</strong></button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('db')"><strong>DB Branch</strong></button>
+            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="showBranch('db')"><strong>DB
+                Branch</strong></button>
           </li>
         </ul>
       </div>
     </section><!-- End Branch Selection Tabs -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing section-bg">
+    <!-- ======= Pricing Sections for Each Branch ======= -->
+    <!-- OTHER BRANCHES -->
+    <section id="pricing-other" class="pricing section-bg">
       <div class="container">
-        <div class="row gy-4 gx-lg-5">
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Arabic One Painting</h3>
-              <h4 class="price" data-service="Arabic One Painting">HK $80.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Indian Traditional Full Palm</h3>
-              <h4 class="price" data-service="Indian Traditional Full Palm">HK $150.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Single Tattoos</h3>
-              <h4 class="price" data-service="Single Tattoos">HK $40.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Bridal Arms Only</h3>
-              <h4 class="price" data-service="Bridal Arms Only">HK $2000.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Bridal Feet Only</h3>
-              <h4 class="price" data-service="Bridal Feet Only">HK $1500.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
+        <div class="row gy-4 gx-lg-5" id="pricing-container-other">
+          <!-- Dynamic pricing items will be inserted here -->
         </div>
       </div>
-    </section><!-- End Pricing Section -->
+    </section>
+
+    <!-- DB BRANCH -->
+    <section id="pricing-db" class="pricing section-bg d-none">
+      <div class="container">
+        <div class="row gy-4 gx-lg-5" id="pricing-container-db">
+          <!-- Dynamic pricing items will be inserted here -->
+        </div>
+      </div>
+    </section>
+    <!-- End Pricing Sections -->
 
   </main><!-- End #main -->
 
@@ -230,36 +187,66 @@
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
-  <!-- Custom JS for Branch-Specific Pricing -->
+  <!-- Custom JS for Branch Pricing -->
   <script>
-    const prices = {
-      'main': {
-        'Arabic One Painting': 'HK $80.00',
-        'Indian Traditional Full Palm': 'HK $150.00',
-        'Single Tattoos': 'HK $40.00',
-        'Bridal Arms Only': 'HK $2000.00',
-        'Bridal Feet Only': 'HK $1500.00'
-      },
-      'db': {
-        'Arabic One Painting': 'HK $90.00',
-        'Indian Traditional Full Palm': 'HK $160.00',
-        'Single Tattoos': 'HK $45.00',
-        'Bridal Arms Only': 'HK $2100.00',
-        'Bridal Feet Only': 'HK $1600.00'
-      }
-    };
+    // Function to toggle the visibility of branch pricing sections
+    function showBranch(branch) {
+      const otherSection = document.getElementById('pricing-other');
+      const dbSection = document.getElementById('pricing-db');
 
-    function updatePrices(branch) {
-      document.querySelectorAll('.price').forEach(priceElement => {
-        const serviceName = priceElement.dataset.service;
-        if (prices[branch][serviceName]) {
-          priceElement.textContent = prices[branch][serviceName];
-        }
+      if (branch === 'other') {
+        otherSection.classList.remove('d-none');
+        dbSection.classList.add('d-none');
+      } else {
+        dbSection.classList.remove('d-none');
+        otherSection.classList.add('d-none');
+      }
+    }
+
+    // Initialize to show 'Other Branches' on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      showBranch('other');
+    });
+
+    // Data for DB Branch pricing
+    const pricingDataOther = [
+      { name: 'Single Tattoos', price: 'HK$ 40' },
+      { name: 'Arabic One Painting', price: 'HK$ 80' },
+      { name: 'Indian Traditional Full Palm', price: 'HK$ 150' },
+      { name: 'Bridal Feet Only', price: 'HK$ 1500' },
+      { name: 'Bridal Arms Only', price: 'HK$ 2000' }
+    ];
+
+    // Data for DB Branch pricing, sorted from lowest to highest
+    const pricingDataDB = [
+      { name: 'Single Tattoos', price: 'HK$ 40' },
+      { name: 'Arabic One Painting', price: 'HK$ 80' },
+      { name: 'Indian Traditional Full Palm', price: 'HK$ 150' },
+      { name: 'Bridal Feet Only', price: 'HK$ 1500' },
+      { name: 'Bridal Arms Only', price: 'HK$ 2000' }
+    ];
+
+    // Function to generate pricing items dynamically
+    function generatePricingItems(pricingData, containerId) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = ''; // Clear existing content
+      pricingData.forEach(item => {
+        const pricingItem = document.createElement('div');
+        pricingItem.className = 'col-lg-6';
+        pricingItem.innerHTML = `
+          <div class="pricing-item d-flex justify-content-between align-items-center">
+            <h3 class="service-name">${item.name}</h3>
+            <span class="service-price">${item.price}</span>
+          </div>
+        `;
+        container.appendChild(pricingItem);
       });
     }
 
+    // Generate pricing items for both branches on page load
     document.addEventListener('DOMContentLoaded', () => {
-      updatePrices('main'); // Set default to main branch
+      generatePricingItems(pricingDataOther, 'pricing-container-other');
+      generatePricingItems(pricingDataDB, 'pricing-container-db');
     });
   </script>
 

@@ -35,13 +35,17 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="../index.html#hero">Freedas Salon</a></h1>
+      <h1 class="logo"><a href="../index.html">Freedas Salon</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="../index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
           <li><a class="nav-link scrollto active" href="../index.html#branches">Branches</a></li>
-          <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices</span> <i class="bi bi-chevron-down"></i></a>
+
+          <!-- --------------------------- -->
+          <!-- LADIES TREATMENTS & PRICING -->
+          <!-- --------------------------- -->
+          <li class="dropdown"><a href="../index.html#hero"><span>Ladies</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="threading.html">Threading</a></li>
               <li><a href="waxing.html">Waxing</a></li>
@@ -51,45 +55,20 @@
               <li><a href="oil_treatments.html">Oil Treatments</a></li>
               <li><a href="massage.html">Massage</a></li>
               <li><a href="eye_treatments.html">Eye Treatments</a></li>
-              <li class="dropdown"><a href="#"><span>Hair</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Henna Application on Hair</a></li>
-                  <li><a href="#">Herbal Hair Color</a></li>
-                  <li><a href="#">Hair Colouring</a></li>
-                  <li><a href="#">Hair Cut</a></li>
-                  <li><a href="#">Shampoo & Blow Dry</a></li>
-                  <li><a href="hair_styling.html">Hair Styling</a></li>
-                </ul>
-              </li>
+              <li><a href="hair_styling.html"><span>Hair Styling</span></a></li>
+              <li><a href="hair_treatments.html"><span>Hair Treatments</span></a></li>
               <li><a href="henna_painting.html">Henna Painting</a></li>
               <li><a href="make_up.html">Make Up</a></li>
               <li><a href="half_day_pampering.html">Half-Day Pampering</a></li>
             </ul>
           </li>
 
-          <li class="dropdown"><a href="../index.html#hero"><span>Services & Prices (DB Branch)</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- ------------------------- -->
+          <!-- MENS TREATMENTS & PRICING -->
+          <!-- ------------------------- -->
+          <li class="dropdown"><a href="../index.html#hero"><span>Mens</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../DB_branch/threading.html">Threading</a></li>
-              <li><a href="../DB_branch/waxing.html">Waxing</a></li>
-              <li><a href="../DB_branch/facials.html">Facials</a></li>
-              <li><a href="../DB_branch/bleaches.html">Bleaches</a></li>
-              <li><a href="../DB_branch/hand_feet_treatment.html">Hands & Feet Treatments</a></li>
-              <li><a href="../DB_branch/oil_treatments.html">Oil Treatments</a></li>
-              <li><a href="../DB_branch/massage.html">Massage</a></li>
-              <li><a href="../DB_branch/eye_treatments.html">Eye Treatments</a></li>
-              <li class="dropdown"><a href="#"><span>Hair</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Henna Application on Hair</a></li>
-                  <li><a href="#">Herbal Hair Color</a></li>
-                  <li><a href="#">Hair Colouring</a></li>
-                  <li><a href="#">Hair Cut</a></li>
-                  <li><a href="#">Shampoo & Blow Dry</a></li>
-                  <li><a href="../DB_branch/hair_styling.html">Hair Styling</a></li>
-                </ul>
-              </li>
-              <li><a href="../DB_branch/henna_painting.html">Henna Painting</a></li>
-              <li><a href="../DB_branch/make_up.html">Make Up</a></li>
-              <li><a href="../DB_branch/half_day_pampering.html">Half-Day Pampering</a></li>
+              <li><a href="other_branches/threading.html">Threading</a></li>
             </ul>
           </li>
         </ul>
@@ -142,12 +121,6 @@
                 <li><strong>Types</strong>: Henna Application, Herbal Hair Colour, Hair Colouring, Hair Cut, Shampoo & Blow Dry, Hair Styling</li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>Background History</h2>
-              <p>
-                Our hair styling services use traditional Indian herbs from henna plants to color and condition your hair. Herbal henna provides a reddish-brown color, blending grey hair with natural dark hair and giving it a highlighted effect. It also acts as a conditioner, adding extra shine and luster. Herbal hair color contains natural henna and herbs, with minimal chemicals, to provide a natural look. Hair coloring can significantly enhance your appearance and spirit with various options available. We offer various haircuts to suit your personality, along with shampoo and blow-dry services to complete your look.
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -158,76 +131,36 @@
       <div class="container">
         <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('main')"><strong>Main Branch</strong></button>
+            <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab"
+              onclick="showBranch('other')"><strong>All Other Branches</strong></button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="updatePrices('db')"><strong>DB Branch</strong></button>
+            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="showBranch('db')"><strong>DB
+                Branch</strong></button>
           </li>
         </ul>
       </div>
     </section><!-- End Branch Selection Tabs -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing section-bg">
+    <!-- ======= Pricing Sections for Each Branch ======= -->
+    <!-- OTHER BRANCHES -->
+    <section id="pricing-other" class="pricing section-bg">
       <div class="container">
-        <div class="row gy-4 gx-lg-5">
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Henna Application on Hair</h3>
-              <span class="service-price">HK $200.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Herbal Hair Colour</h3>
-              <span class="service-price">HK $300.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Hair Colouring with Customer's Own Colour</h3>
-              <span class="service-price">HK $200.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Hair Cut</h3>
-              <span class="service-price">HK $180.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Shampoo and Blow Dry</h3>
-              <span class="service-price">HK $100.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Hair Styling</h3>
-              <span class="service-price">HK $350.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Loreal/Inoa Hair Colour</h3>
-              <span class="service-price">HK $300.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Hair Cut with Wash</h3>
-              <span class="service-price">HK $200.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between align-items-center">
-              <h3 class="service-name">Nalo Hair Colour</h3>
-              <span class="service-price">HK $250.00+</span>
-            </div>
-          </div><!-- End Pricing Item -->
+        <div class="row gy-4 gx-lg-5" id="pricing-container-other">
+          <!-- Dynamic pricing items will be inserted here -->
         </div>
       </div>
-    </section><!-- End Pricing Section -->
+    </section>
+
+    <!-- DB BRANCH -->
+    <section id="pricing-db" class="pricing section-bg d-none">
+      <div class="container">
+        <div class="row gy-4 gx-lg-5" id="pricing-container-db">
+          <!-- Dynamic pricing items will be inserted here -->
+        </div>
+      </div>
+    </section>
+    <!-- End Pricing Sections -->
 
   </main><!-- End #main -->
 
@@ -255,50 +188,73 @@
 
   <!-- Custom JS for Branch Pricing -->
   <script>
-    const pricingData = {
-      "main": {
-        "Henna Application on Hair": "HK $200.00+",
-        "Herbal Hair Colour": "HK $300.00+",
-        "Hair Colouring with Customer's Own Colour": "HK $200.00+",
-        "Hair Cut": "HK $180.00+",
-        "Shampoo and Blow Dry": "HK $100.00+",
-        "Hair Styling": "HK $350.00+",
-        "Loreal/Inoa Hair Colour": "HK $300.00+",
-        "Hair Cut with Wash": "HK $200.00+",
-        "Nalo Hair Colour": "HK $250.00+"
-      },
-      "db": {
-        "Henna Application on Hair": "HK $220.00+",
-        "Herbal Hair Colour": "HK $320.00+",
-        "Hair Colouring with Customer's Own Colour": "HK $220.00+",
-        "Hair Cut": "HK $190.00+",
-        "Shampoo and Blow Dry": "HK $120.00+",
-        "Hair Styling": "HK $370.00+",
-        "Loreal/Inoa Hair Colour": "HK $320.00+",
-        "Hair Cut with Wash": "HK $220.00+",
-        "Nalo Hair Colour": "HK $270.00+"
+    // Function to toggle the visibility of branch pricing sections
+    function showBranch(branch) {
+      const otherSection = document.getElementById('pricing-other');
+      const dbSection = document.getElementById('pricing-db');
+
+      if (branch === 'other') {
+        otherSection.classList.remove('d-none');
+        dbSection.classList.add('d-none');
+      } else {
+        dbSection.classList.remove('d-none');
+        otherSection.classList.add('d-none');
       }
-    };
+    }
 
-    function updatePrices(branch) {
-      const prices = pricingData[branch];
-      const pricingItems = document.querySelectorAll('.pricing-item');
+    // Initialize to show 'Other Branches' on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      showBranch('other');
+    });
 
-      pricingItems.forEach(item => {
-        const serviceName = item.querySelector('.service-name').textContent.trim();
-        const priceElement = item.querySelector('.service-price');
+    // Data for Other Branches pricing
+    const pricingDataOther = [
+      { name: 'Haircut (Straight/ U-Shape/ V-Shape)', price: 'HK$ 100' },
+      { name: 'Layers/ Feathers/ Step-cut/ Blunt-cut', price: 'HK$ 180' },
+      { name: 'Hair Spa', price: 'HK$ 250+' },
+      { name: 'Wash + Blow-Dry', price: 'HK$ 120+' },
+      { name: 'Ironning - Hair Strengthening', price: 'HK$ 150+' },
+      { name: 'Curls', price: 'HK$ 150+' },
+      { name: 'Crimping', price: 'HK$ 150+' },
+      { name: 'Highlights (Crown Area)', price: 'HK$ 399+' },
+      { name: 'Highlights (Full Head)', price: 'HK$ 599+' },
+      { name: 'Hair Color (Roots Touch Up)', price: 'HK$ 200+' },
+      { name: 'Hair Color (Global Hair Color)', price: 'HK$ 350+' },
+      { name: 'Pre-lightening Global', price: 'HK$ 599+' }
+    ];
 
-        if (prices[serviceName]) {
-          priceElement.textContent = prices[serviceName];
-        } else {
-          priceElement.textContent = "N/A";
-        }
+    // Data for DB Branch pricing
+    const pricingDataDB = [
+      { name: 'Henna Application', price: 'HK$ 180+' },
+      { name: 'Hair Coloring', price: 'HK$ 220+' },
+      { name: 'Haircut (Straight/ U-shape/ V-shape)', price: 'HK$ 100+' },
+      { name: 'Layers, Steps, Bob-cut', price: 'HK$ 150+' },
+      { name: 'Shampoo + Blow Dry', price: 'HK$ 100+' },
+      { name: 'Hairstyling', price: 'HK$ 350+' },
+      { name: 'Loreal Inoa Hair Color', price: 'HK$ 300+' }
+];
+
+    // Function to generate pricing items dynamically
+    function generatePricingItems(pricingData, containerId) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = ''; // Clear existing content
+      pricingData.forEach(item => {
+        const pricingItem = document.createElement('div');
+        pricingItem.className = 'col-lg-6';
+        pricingItem.innerHTML = `
+          <div class="pricing-item d-flex justify-content-between align-items-center">
+            <h3 class="service-name">${item.name}</h3>
+            <span class="service-price">${item.price}</span>
+          </div>
+        `;
+        container.appendChild(pricingItem);
       });
     }
 
-    // Initialize default prices on page load
+    // Generate pricing items for both branches on page load
     document.addEventListener('DOMContentLoaded', () => {
-      updatePrices('main');
+      generatePricingItems(pricingDataOther, 'pricing-container-other');
+      generatePricingItems(pricingDataDB, 'pricing-container-db');
     });
   </script>
 
