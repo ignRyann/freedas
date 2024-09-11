@@ -62,8 +62,8 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  /* background: #fff; */
-  background: #000000;
+  background: #8C8477;
+  /* background: #000000; */
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -71,14 +71,15 @@ h6 {
 }
 
 #header .logo {
-  font-size: 48px;
+  font-size: 56px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 1000;
   letter-spacing: 1px;
-  /* text-transform: uppercase; */
-  font-family: "Dancing Script", sans-serif;
+  text-transform: uppercase;
+  /* font-family: "Dancing Script", sans-serif; */
+  font-family: "Nave";
 }
 
 #header .logo a {
@@ -319,9 +320,10 @@ h6 {
 #hero {
   width: 100%;
   height: 62.5vh;
-  /* background: #3cc038; */
-  /* background: #ffffff; */
-  background: #D5E5E5;
+  background-color: white;
+  /* background-color: #CEC8BC; */
+  /* background-color: #F5F4EF; */
+  
 }
 
 #hero .container {
@@ -403,7 +405,9 @@ section {
 }
 
 #branches {
-  background-color: #8DE0E2;
+  /* background-color: #EAEAEA; */
+  /* background-color: #BBAF95; */
+  background-color: #CEC8BC;
 }
 
 #branches a {
@@ -412,6 +416,10 @@ section {
 
 #branches a:hover {
   color: gray;
+}
+
+#timings {
+  background-color: #CEC8BC;
 }
 
 .section-title {
@@ -910,7 +918,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #000000;
+  /* background: #000000; */
+  background: #8C8477;
   padding: 0 0 30px 0;
   color: #ffffff;
   font-size: 14px;

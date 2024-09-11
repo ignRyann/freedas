@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Make Up Details - Freedas Limited</title>
+  <title>Waxing Details - Freedas Limited</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -85,10 +85,10 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Make Up Information</h2>
+          <h2>Waxing Information</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li>Make Up</li>
+            <li>Waxing</li>
           </ol>
         </div>
       </div>
@@ -102,10 +102,10 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/makeup-1.jpg" alt="Make Up Example 1">
+                  <img src="../assets/images/waxing-1.jpg" alt="Waxing Service Example 1">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/makeup-2.jpg" alt="Make Up Example 2">
+                  <img src="../assets/images/waxing-2.jpg" alt="Waxing Service Example 2">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -115,8 +115,11 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
-                <li><strong>Service</strong>: Make Up</li>
-                <li><strong>Types</strong>: Evening Make Up, Party Make Up with Lashes, Bridal Make Up</li>
+                <li><strong>Service</strong>: Waxing</li>
+                <li><strong>Types</strong>: Strip Waxing, Strip-less Waxing</li>
+                <li><strong>Materials Used</strong>: Olive Oil Wax, Tea Tree Oil Wax, Honey Wax, Chocolate Wax, Pink
+                  Sensitive Wax</li>
+                <li><strong>Contact</strong>: <a href="mailto:info@freedas.com">info@freedas.com</a></li>
               </ul>
             </div>
           </div>
@@ -130,11 +133,7 @@
         <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab"
-              onclick="showBranch('other')"><strong>All Other Branches</strong></button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="showBranch('db')"><strong>DB
-                Branch</strong></button>
+              onclick="showBranch('other')"><strong>Tsim Sha Tsui & Tung Chung</strong></button>
           </li>
         </ul>
       </div>
@@ -150,16 +149,6 @@
       </div>
     </section>
 
-    <!-- DB BRANCH -->
-    <section id="pricing-db" class="pricing section-bg d-none">
-      <div class="container">
-        <div class="row gy-4 gx-lg-5" id="pricing-container-db">
-          <!-- Dynamic pricing items will be inserted here -->
-        </div>
-      </div>
-    </section>
-    <!-- End Pricing Sections -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -171,7 +160,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -205,42 +195,68 @@
       showBranch('other');
     });
 
-    // Data for Other Branches pricing
-    const pricingDataOther = [
-      { name: 'Evening Make Up', price: 'HK$ 250' },
-      { name: 'Party Make Up with Lashes', price: 'HK$ 400' },
-      { name: 'Bridal Make Up', price: 'HK$ 1500' }
-    ];
+  // Data for Other Branches pricing grouped by service type
+  const pricingDataOther = {
+    'Eyebrow Waxing': [
+      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 90' },
+    ],
+    'Face Waxing': [
+      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 250' },
+    ],
+    'Body Waxing': [
+      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 480' },
+    ],
+    'Arms Waxing': [
+      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 120' },
+    ],
+    'Legs Waxing': [
+      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 160' },
+    ],
+    'Front Waxing': [
+      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 130' },
+    ],
+    'Back Waxing': [
+      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 130' },
+    ],
+    'Underarms Waxing': [
+      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 80' },
+    ],
+  };
 
-    // Data for DB Branch pricing
-    const pricingDataDB = [
-      { name: 'Evening Make Up', price: 'HK$ 250' },
-      { name: 'Party Make Up with Lashes', price: 'HK$ 600' },
-      { name: 'Bridal Make Up', price: 'HK$ 2000' }
-    ];
+  // Function to generate pricing items dynamically grouped by service type
+  function generatePricingItemsGroupedByService(pricingData, containerId) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = ''; // Clear existing content
 
-    // Function to generate pricing items dynamically
-    function generatePricingItems(pricingData, containerId) {
-      const container = document.getElementById(containerId);
-      container.innerHTML = ''; // Clear existing content
-      pricingData.forEach(item => {
+    // Loop through each service type and its corresponding wax types
+    for (const [serviceType, waxes] of Object.entries(pricingData)) {
+      // Create a header for the service type
+      const header = document.createElement('h4');
+      header.textContent = serviceType;
+      header.className = 'mt-4';
+      header.style.fontWeight = 'bold'; // Make the header bold
+      container.appendChild(header);
+
+      // Generate the wax types under each service type
+      waxes.forEach(wax => {
         const pricingItem = document.createElement('div');
         pricingItem.className = 'col-lg-6';
         pricingItem.innerHTML = `
           <div class="pricing-item d-flex justify-content-between align-items-center">
-            <h3 class="service-name">${item.name}</h3>
-            <span class="service-price">${item.price}</span>
+            <h5 class="service-name">${wax.waxType}</h5>
+            <span class="service-price">${wax.price}</span>
           </div>
         `;
         container.appendChild(pricingItem);
       });
     }
+  }
 
-    // Generate pricing items for both branches on page load
-    document.addEventListener('DOMContentLoaded', () => {
-      generatePricingItems(pricingDataOther, 'pricing-container-other');
-      generatePricingItems(pricingDataDB, 'pricing-container-db');
-    });
+  // Generate pricing items for both branches on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    generatePricingItemsGroupedByService(pricingDataOther, 'pricing-container-other');
+    generatePricingItemsGroupedByService(pricingDataDB, 'pricing-container-db');
+  });
   </script>
 
 </body>

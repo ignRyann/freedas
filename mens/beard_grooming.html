@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Make Up Details - Freedas Limited</title>
+  <title>Hand and Feet Treatment Details - Freedas Limited</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -69,7 +69,7 @@
           <!-- ------------------------- -->
           <li class="dropdown"><a href="../index.html#hero"><span>Mens</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="other_branches/threading.html">Threading</a></li>
+              <li><a href="other_branches/threading.html">Hair</a></li>
             </ul>
           </li>
         </ul>
@@ -80,15 +80,14 @@
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Make Up Information</h2>
+          <h2>Beard Grooming Information</h2>
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li>Make Up</li>
+            <li>Beard Grooming</li>
           </ol>
         </div>
       </div>
@@ -102,10 +101,13 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/makeup-1.jpg" alt="Make Up Example 1">
+                  <img src="../assets/images/threading-1.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/makeup-2.jpg" alt="Make Up Example 2">
+                  <img src="../assets/images/threading-2.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/threading-3.jpg" alt="">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -115,8 +117,9 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
-                <li><strong>Service</strong>: Make Up</li>
-                <li><strong>Types</strong>: Evening Make Up, Party Make Up with Lashes, Bridal Make Up</li>
+                <li><strong>Duration</strong>: Approximately 30+ minutes</li>
+                <li><strong>Technician</strong>: Certified Hand and Feet Treatment Specialist</li>
+                <li><strong>Contact</strong>: <a href="mailto:info@freedas.com">info@freedas.com</a></li>
               </ul>
             </div>
           </div>
@@ -130,11 +133,7 @@
         <ul class="nav nav-tabs justify-content-center branch-tabs" id="branchTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab"
-              onclick="showBranch('other')"><strong>All Other Branches</strong></button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" onclick="showBranch('db')"><strong>DB
-                Branch</strong></button>
+              onclick="showBranch('other')"><strong>Tsim Sha Tsui & Tung Chung</strong></button>
           </li>
         </ul>
       </div>
@@ -171,7 +170,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -202,21 +202,14 @@
 
     // Initialize to show 'Other Branches' on page load
     document.addEventListener('DOMContentLoaded', () => {
-      showBranch('other');
+        showBranch('other');
     });
 
     // Data for Other Branches pricing
     const pricingDataOther = [
-      { name: 'Evening Make Up', price: 'HK$ 250' },
-      { name: 'Party Make Up with Lashes', price: 'HK$ 400' },
-      { name: 'Bridal Make Up', price: 'HK$ 1500' }
-    ];
-
-    // Data for DB Branch pricing
-    const pricingDataDB = [
-      { name: 'Evening Make Up', price: 'HK$ 250' },
-      { name: 'Party Make Up with Lashes', price: 'HK$ 600' },
-      { name: 'Bridal Make Up', price: 'HK$ 2000' }
+        { name: 'Clean Shave', price: 'HK$ 60' },
+        { name: "Beard Trimming", price: 'HK$ 60' },
+        { name: "Beard Styling", price: 'HK$ 100'}
     ];
 
     // Function to generate pricing items dynamically
