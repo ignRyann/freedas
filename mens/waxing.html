@@ -14,7 +14,9 @@
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,600,700|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,600,700|Lato:300,300i,400,400i,700,700i"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
@@ -102,10 +104,10 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/waxing-1.jpg" alt="Waxing Service Example 1">
+                  <img src="../assets/images-mens/waxing.jpg" alt="Waxing Service Example 1">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/waxing-2.jpg" alt="Waxing Service Example 2">
+                  <img src="../assets/images-mens/waxing2.jpg" alt="Waxing Service Example 2">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -115,11 +117,11 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
-                <li><strong>Service</strong>: Waxing</li>
-                <li><strong>Types</strong>: Strip Waxing, Strip-less Waxing</li>
-                <li><strong>Materials Used</strong>: Olive Oil Wax, Tea Tree Oil Wax, Honey Wax, Chocolate Wax, Pink
-                  Sensitive Wax</li>
-                <li><strong>Contact</strong>: <a href="mailto:info@freedas.com">info@freedas.com</a></li>
+                <li><strong>Description</strong>: Our waxing services provide a smooth and long-lasting hair removal
+                  solution. Using high-quality tea tree and honey wax, we ensure a gentle and effective treatment
+                  suitable for all skin types.</li>
+                <li><strong>Duration</strong>: 30 minutes</li>
+                <li><strong>Price Range</strong>: HK$ 90 - HK$ 480</li>
               </ul>
             </div>
           </div>
@@ -195,68 +197,68 @@
       showBranch('other');
     });
 
-  // Data for Other Branches pricing grouped by service type
-  const pricingDataOther = {
-    'Eyebrow Waxing': [
-      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 90' },
-    ],
-    'Face Waxing': [
-      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 250' },
-    ],
-    'Body Waxing': [
-      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 480' },
-    ],
-    'Arms Waxing': [
-      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 120' },
-    ],
-    'Legs Waxing': [
-      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 160' },
-    ],
-    'Front Waxing': [
-      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 130' },
-    ],
-    'Back Waxing': [
-      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 130' },
-    ],
-    'Underarms Waxing': [
-      { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 80' },
-    ],
-  };
+    // Data for Other Branches pricing grouped by service type
+    const pricingDataOther = {
+      'Eyebrow Waxing': [
+        { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 90' },
+      ],
+      'Face Waxing': [
+        { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 250' },
+      ],
+      'Body Waxing': [
+        { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 480' },
+      ],
+      'Arms Waxing': [
+        { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 120' },
+      ],
+      'Legs Waxing': [
+        { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 160' },
+      ],
+      'Front Waxing': [
+        { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 130' },
+      ],
+      'Back Waxing': [
+        { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 130' },
+      ],
+      'Underarms Waxing': [
+        { waxType: 'Tea Tree / Honey Wax', price: 'HK$ 80' },
+      ],
+    };
 
-  // Function to generate pricing items dynamically grouped by service type
-  function generatePricingItemsGroupedByService(pricingData, containerId) {
-    const container = document.getElementById(containerId);
-    container.innerHTML = ''; // Clear existing content
+    // Function to generate pricing items dynamically grouped by service type
+    function generatePricingItemsGroupedByService(pricingData, containerId) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = ''; // Clear existing content
 
-    // Loop through each service type and its corresponding wax types
-    for (const [serviceType, waxes] of Object.entries(pricingData)) {
-      // Create a header for the service type
-      const header = document.createElement('h4');
-      header.textContent = serviceType;
-      header.className = 'mt-4';
-      header.style.fontWeight = 'bold'; // Make the header bold
-      container.appendChild(header);
+      // Loop through each service type and its corresponding wax types
+      for (const [serviceType, waxes] of Object.entries(pricingData)) {
+        // Create a header for the service type
+        const header = document.createElement('h4');
+        header.textContent = serviceType;
+        header.className = 'mt-4';
+        header.style.fontWeight = 'bold'; // Make the header bold
+        container.appendChild(header);
 
-      // Generate the wax types under each service type
-      waxes.forEach(wax => {
-        const pricingItem = document.createElement('div');
-        pricingItem.className = 'col-lg-6';
-        pricingItem.innerHTML = `
+        // Generate the wax types under each service type
+        waxes.forEach(wax => {
+          const pricingItem = document.createElement('div');
+          pricingItem.className = 'col-lg-6';
+          pricingItem.innerHTML = `
           <div class="pricing-item d-flex justify-content-between align-items-center">
             <h5 class="service-name">${wax.waxType}</h5>
             <span class="service-price">${wax.price}</span>
           </div>
         `;
-        container.appendChild(pricingItem);
-      });
+          container.appendChild(pricingItem);
+        });
+      }
     }
-  }
 
-  // Generate pricing items for both branches on page load
-  document.addEventListener('DOMContentLoaded', () => {
-    generatePricingItemsGroupedByService(pricingDataOther, 'pricing-container-other');
-    generatePricingItemsGroupedByService(pricingDataDB, 'pricing-container-db');
-  });
+    // Generate pricing items for both branches on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      generatePricingItemsGroupedByService(pricingDataOther, 'pricing-container-other');
+      generatePricingItemsGroupedByService(pricingDataDB, 'pricing-container-db');
+    });
   </script>
 
 </body>

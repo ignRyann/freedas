@@ -14,7 +14,9 @@
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,600,700|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,600,700|Lato:300,300i,400,400i,700,700i"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
@@ -101,13 +103,10 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/images/threading-1.jpg" alt="">
+                  <img src="../assets/images-mens/facial.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <img src="../assets/images/threading-2.jpeg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/images/threading-3.jpg" alt="">
+                  <img src="../assets/images-mens/facial2.jpg" alt="">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -117,9 +116,9 @@
             <div class="portfolio-info">
               <h3>Service Information</h3>
               <ul>
+                <li><strong>Description</strong>: Our facial treatments are designed to rejuvenate and refresh your skin, providing a deep cleanse and hydration. Suitable for all skin types.</li>
                 <li><strong>Duration</strong>: Approximately 30+ minutes</li>
-                <li><strong>Technician</strong>: Certified Facial Regime Specialist</li>
-                <li><strong>Contact</strong>: <a href="mailto:info@freedas.com">info@freedas.com</a></li>
+                <li><strong>Price Range</strong>: HK $180 - HK $350</li>
               </ul>
             </div>
           </div>
@@ -202,13 +201,13 @@
 
     // Initialize to show 'Other Branches' on page load
     document.addEventListener('DOMContentLoaded', () => {
-        showBranch('other');
+      showBranch('other');
     });
 
     // Data for Other Branches pricing
     const pricingDataOther = [
-        { name: 'Clean up', price: 'HK$ 180' },
-        { name: "Casmara Men's Facial", price: 'HK$ 350' },
+      { name: 'Clean up', price: 'HK$ 180' },
+      { name: "Casmara Men's Facial", price: 'HK$ 350' },
     ];
 
     // Function to generate pricing items dynamically

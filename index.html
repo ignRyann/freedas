@@ -88,21 +88,51 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>YOUR BEAUTY, OUR PASSION.</h1>
-          <h2>At our salon, we are dedicated to bringing out your unique beauty, pampering you with personalized
-            treatments
-            that ignite your inner glow. Experience our passion firsthand and discover a world of beauty tailored just
-            for you.
-          </h2>
-          <!-- <div><a href="mailto:freedashk@gmail.com" class="btn-get-started scrollto">Email Us Now!</a></div> -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <!-- Text Content -->
+              <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1>Unleash Your Beauty</h1>
+                <h2>
+                  Indulge in a full spectrum of services designed just for you. From haircuts and colors to skincare, nails, and makeup, plus expert waxing and threading, our talented team is dedicated to helping you look and feel fabulous for any occasion.
+                </h2>
+              </div>
+              <!-- Image -->
+              <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <!-- Text Content -->
+              <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1>Elevate Your Look</h1>
+                <h2>
+                  We're excited to introduce our new men's services! From sharp haircuts and relaxing shaves to rejuvenating facials and expert waxing, our skilled barbers are dedicated to enhancing your look with precision and care.
+                </h2>
+              </div>
+              <!-- Image -->
+              <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                <img src="assets/img/hero2.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Swiper Navigation Buttons (Optional) -->
+      <div class="swiper-button-prev" style="color: black;"></div>
+      <div class="swiper-button-next" style="color: black;"></div>
     </div>
 
   </section><!-- End Hero -->
@@ -230,48 +260,48 @@
         <div class="row">
           <div class="col-lg-6">
             <h3 style="background-color: #8C8477; color: white; text-align: center;">Ladies</h3>
-            <table class="table">
+            <table class="table opening-hours-table">
               <thead>
-                <tr>
-                  <th>Day</th>
-                  <th>Timings</th>
-                </tr>
+              <tr>
+                <th>Day</th>
+                <th>Timings</th>
+              </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Monday</td>
-                  <td>10:30 AM - 19:30 PM</td>
-                </tr>
-                <tr>
-                  <td>Tuesday</td>
-                  <td>10:30 AM - 19:30 PM</td>
-                </tr>
-                <tr>
-                  <td>Wednesday</td>
-                  <td>10:30 AM - 19:30 PM</td>
-                </tr>
-                <tr>
-                  <td>Thursday</td>
-                  <td>10:30 AM - 19:30 PM</td>
-                </tr>
-                <tr>
-                  <td>Friday</td>
-                  <td>10:30 AM - 19:30 PM</td>
-                </tr>
-                <tr>
-                  <td>Saturday</td>
-                  <td>10:30 AM - 19:30 PM</td>
-                </tr>
-                <tr>
-                  <td>Sunday</td>
-                  <td>Closed</td>
-                </tr>
+              <tr>
+                <td>Monday</td>
+                <td>10:30 AM - 19:30 PM</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>10:30 AM - 19:30 PM</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>10:30 AM - 19:30 PM</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>10:30 AM - 19:30 PM</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>10:30 AM - 19:30 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:30 AM - 19:30 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
               </tbody>
             </table>
-          </div>
-          <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6">
             <h3 style="background-color: #8C8477; color: white; text-align: center;">Mens</h3>
-            <table class="table">
+            <table class="table opening-hours-table">
               <thead>
                 <tr>
                   <th>Day</th>
@@ -337,6 +367,28 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 5000, // 5s
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Optional parameters
+      speed: 1000, // Transition speed in milliseconds
+      effect: 'slide', // Slide transition effect
+    });
+  </script>
 
 </body>
 
